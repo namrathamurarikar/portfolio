@@ -26,3 +26,6 @@ dist-ssr
 
 backup/
 .env
+
+# GitHub blocks files > 100 MB. Host large demos externally or use Git LFS.
+public/videos/AI-Journaling.mp4
