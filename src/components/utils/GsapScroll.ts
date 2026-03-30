@@ -39,9 +39,8 @@ export function registerScrollSectionAnimations() {
         invalidateOnRefresh: true,
       },
     });
-    tl2
-      .to(".about-section", { y: "30%", duration: 6 }, 0)
-      .to(".about-section", { opacity: 0, delay: 3, duration: 2 }, 0);
+    /* Avoid y-transform on about-section — it slides the block over What I Do while copy is still visible */
+    tl2.to(".about-section", { opacity: 0, duration: 2.5, ease: "none" }, 0);
 
     const tl3 = gsap.timeline({
       scrollTrigger: {
@@ -52,14 +51,12 @@ export function registerScrollSectionAnimations() {
         invalidateOnRefresh: true,
       },
     });
-    tl3
-      .fromTo(
-        ".landing-hero-video-parallax",
-        { y: "0%" },
-        { y: "-100%", duration: 4, ease: "none", delay: 1 },
-        0
-      )
-      .fromTo(".whatIDO", { y: 0 }, { y: "15%", duration: 2 }, 0);
+    tl3.fromTo(
+      ".landing-hero-video-parallax",
+      { y: "0%" },
+      { y: "-100%", duration: 4, ease: "none", delay: 1 },
+      0
+    );
   }
 }
 

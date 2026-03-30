@@ -9,7 +9,7 @@
   width: var(--cWidth);
   max-width: 1920px;
   margin: auto;
-  z-index: 9;
+  z-index: 8;
 }
 /* Middle zone — like reference layout (space before Develop/Design column) */
 .whatIDO-gap {
@@ -24,7 +24,7 @@
   display: flex;
   justify-content: center;
   position: relative;
-  z-index: 9;
+  z-index: 8;
 }
 .what-box:first-child {
   flex: 0 0 auto;
