@@ -45,7 +45,7 @@ const PROJECTS: WorkProject[] = [
     tools:
       "Built with Python, Streamlit, and Gemini AI to provide automated ASAM mapping, risk detection, and voice-to-text clinical insights.",
     image: publicUrl("images/AI-Journaling.png"),
-    link: videoDemoHref("AI-Journaling.mp4"),
+    link: videoDemoHref("Interactive_journaling_video.mp4"),
   },
 ];
 
